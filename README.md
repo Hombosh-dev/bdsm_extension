@@ -1,2 +1,13 @@
-# bdsm_extension
-Extension to do BD tests on LMS
+# LMS Auto Answer Extension
+
+Extension to do BD tests on LMS.
+
+## 🛠 Ручне встановлення (на постійній основі)
+
+1. Відкрийте браузер (Chrome, Brave, Edge).
+2. Перейдіть за адресою `chrome://extensions/`.
+3. Увімкніть **Developer mode** (режим розробника) у правому верхньому куті.
+4. Натисніть **Load unpacked** (Завантажити розпаковане розширення).
+5. Виберіть папку з цим проектом.
+
+Тепер розширення буде доступне у вашому браузері постійно.
