@@ -10,4 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
   slowFillingCheckbox.addEventListener('change', () => {
     chrome.storage.local.set({ slowFilling: slowFillingCheckbox.checked });
   });
+
+  // Force fill button
+  document.getElementById('forceFill').addEventListener('click', () => {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      if (tabs[0]) {
+        chrome.tabs.sendMessage(tabs[0].id, { action: 'forceFill' });
+      }
+    });
+  });
 });

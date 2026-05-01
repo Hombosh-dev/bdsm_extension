@@ -91,4 +91,12 @@ function waitUntilRendered(retries = 20) {
   }
 }
 
+// Listen for messages from the popup
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === 'forceFill') {
+    const questions = document.querySelectorAll('div.que');
+    questions.forEach(q => answerQuestion(q));
+  }
+});
+
 window.addEventListener('load', () => waitUntilRendered());
