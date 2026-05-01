@@ -3,7 +3,7 @@
     "name": "LMS Auto Answer",
     "description": "Automatically fills answers on LMS tests",
     "version": "1.0",
-    "permissions": ["scripting"],
+    "permissions": ["scripting", "storage"],
     "content_scripts": [
       {
         "matches": ["https://learn.ucu.edu.ua/mod/quiz/*"],
@@ -18,7 +18,8 @@
       }
     ],
     "action": {
-      "default_title": "LMS Auto Answer"
+      "default_title": "LMS Auto Answer",
+      "default_popup": "popup.html"
     }
   }
   

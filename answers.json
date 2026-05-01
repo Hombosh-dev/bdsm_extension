@@ -273,6 +273,7 @@
     ],
 
     "How would Join Dependency be denoted?": [
+        "relation r(R) satisfies the join dependency (JD) ∗[R1,…,Rn] if r could be losslessly decomposed onto R1,…,Rn, i.e. r(R)=ΠR1(r(R)) ⋈…⋈ ΠRn(r(R)).",
         "Let r(R) be a relation with schema R, R be the union of Ri⊆R, i=1...n. Then relation r(R) satisfies the join dependency (JD)  ∗[R1,…,Rn] if r could be losslessly decomposed onto R1,…,Rn, i.e. r(R)=Πᵣ₁(r(R)) ⋈…⋈ Πᵣₙ(r(R)).",
         "Join Dependency is the dependency satisfied by a relation r with schema R if r could be losslessly decomposed onto a number of its dsstinct projections"
     ],
