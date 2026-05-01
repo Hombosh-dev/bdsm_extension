@@ -1,6 +1,6 @@
-# bdsm_extension
+# LMS Auto Answer Extension
 
-Extension to do BD tests on LMS
+Extension to do BD tests on LMS.
 
 ## 🛠 Ручне встановлення (на постійній основі)
 
