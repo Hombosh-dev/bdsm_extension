@@ -24,7 +24,7 @@ function normalizeWhitespace(text) {
 function normalizeQuestion(text) {
   return normalizeWhitespace(
     text
-      .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '')
+      .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*(please|будь ласка).*$/i, '')
       .replace(/\s*\([\s\S]*?\)$/i, '')
   );
 }
